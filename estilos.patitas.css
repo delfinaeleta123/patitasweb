@@ -1,0 +1,135 @@
+.nubes-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.nube {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* centra horizontal */
+    background-image: url("nube boton-free-png.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 190px;
+    /* Ajustá según el tamaño de tu nube */
+    height: 120px;
+    text-align: center;
+}
+
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toggle {
+    display: none;
+}
+
+.opciones {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 10;
+}
+
+.toggle:checked+.titulo+.opciones {
+    display: block;
+}
+
+body {
+    background-image: url("fondo\ patitas.jpg");
+    /* imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mensaje {
+    background-color: #7bd2d0;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+h1 {
+    text-align: center;
+    font-size:70px;
+}
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+  flex-wrap: wrap; /* Por si se reduce el tamaño de pantalla */
+  gap: 50px;
+}
+.imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imagen p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.imagen img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagen img:hover {
+  transform: scale(1.05);
+}
+.redes {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000; /* para que esté por encima de todo */
+}
+
+.redes img {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.redes img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,68 @@
+.barra {
+    background-color: #d4a2ab; /* Rosa claro */
+    padding: 20px 0;
+}
+.titulo {
+    background-color: #ec5ca7; /* Rosa fuerte */
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.titulo h1 {
+    margin: 0;
+    font-size: 30px;
+    color: black;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    letter-spacing: 1px;
+}
+body {
+    background: repeating-linear-gradient(
+        45deg,                  /* Ángulo de las líneas diagonales */
+        #f1a6c6,                /* Rosa claro */
+        #eea5c3 20px,           /* Ancho de franja rosa */
+        #f09b9b 20px,           /* Blanco empieza después de rosa */
+        #d4bcbc 40px            /* Ancho de franja blanca */
+    );
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.contenedorperros {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.tarjetaperro {
+  background-color: #fcb8da; /* fondo rosa claro */
+  border-radius: 25px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  margin: 10px;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.tarjetaperro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.tarjetaperro p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+}
+.recuadropadres {
+  background-color: #fcb8da; /* rosa del recuadro inferior */
+  padding: 10px;
+  margin: 20px auto;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+}
