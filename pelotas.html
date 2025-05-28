@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PATITAS PEQUEÑAS</title>
+    <link rel="stylesheet" href="pelotas.css" />
+</head>
+
+<body>
+    <div class="barra">
+        <div class="titulo">
+            <h1>PELOTAS</h1>
+            <div class="menu-casita">
+                <input type="checkbox" id="toggle-casita">
+                <label for="toggle-casita">
+                    <img src="imagenes/icono menu.png" alt="Menú" style="width: 30px; cursor: pointer;">
+                </label>
+                <div class="opciones-casita">
+                    <a href="index.html">Inicio</a>
+                    <a href="perros.html">Perros</a>
+                    <a href="gatos.html">Gatos</a>
+                    <a href="conejos.html">Conejos</a>
+                    <details>
+                        <summary>Accesorios</summary>
+                        <a href="collares.html">Collar</a>
+                        <a href="extras.html">Extra</a>
+                    </details>
+                    <details>
+                        <summary>Juguetes</summary>
+                        <a href="pelotas.html">Pelotas</a>
+                        <a href="muñecos.html">Muñecos</a>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="barrasuperior">
+        <div class="contactos">
+            <a href="https://wa.me/12345676" target="_blank">
+                <img src="imagenes/whatsap.png" alt="WhatsApp">
+                consulta estos productos aqui
+            </a>
+        </div>
+        <a href="https://www.instagram.com/cataeleta" target="_blank">
+            <img src="imagenes/insta.png" alt="Instagram" class="icono-red">
+        </a>
+    </div>
+
+    <main>
+        <div class="productos">
+            <div class="producto">
+                <img src="imagenes/pelota rosa.jpg" alt="pelota perro rosa" />
+                <ul>
+                    <li>pelota rosa</li>
+                    <li>precio: $15000</li>
+                </ul>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/pelota naranja.webp" alt="pelota naranja perro" />
+                <ul>
+                    <li>Pelota naranja</li>
+                    <li>precio: $15000</li>
+                </ul>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/plumas gato.jpg" alt="plumas para gato" />
+                <ul>
+                    <li>varilla con bola y cola de plumas</li>
+                    <li>precio: $12000</li>
+                </ul>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/ratitas gato.webp" alt="ratitas" />
+                <ul>
+                    <li>Ratitas</li>
+                    <li>precio: $12000</li>
+                </ul>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/bola de conejo.webp" alt="bola de conejo" />
+                <ul>
+                    <li>Bola para conejo</li>
+                    <li>precio: $10000</li>
+                </ul>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/pelota naranja perro.webp" alt="pelota naranja perro" />
+                <ul>
+                    <li>Pelota naranja</li>
+                    <li>precio: $15000</li>
+                </ul>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+    <div style="text-align: center; margin: 20px;">
+        <button onclick="finalizarCompra()"
+            style="font-size: 20px; padding: 10px 20px; border-radius: 15px; background-color: #ff5e6c; color: white; border: none; cursor: pointer;">Finalizar
+            compra</button>
+    </div>
+    <div class="recuadroinfo">
+        <p><strong>Si quiere saber mas de estos productos, ve a nuestras redes</strong></p>
+        <p>¡Llevate una para que se entretenga tu mascota!</p>
+    </div>
+    <script>
+    const carrito = [];
+
+    document.querySelectorAll('.agregar-carrito').forEach((boton, index) => {
+        boton.addEventListener('click', () => {
+            const producto = document.querySelectorAll('.producto')[index];
+            const nombre = producto.querySelector('ul li:first-child').innerText;
+            const precio = producto.querySelector('ul li:nth-child(2)').innerText;
+            carrito.push(`${nombre} - ${precio}`);
+            alert(`${nombre} agregado al carrito`);
+        });
+    });
+
+    function finalizarCompra() {
+        if (carrito.length === 0) {
+            alert("¡No hay productos en el carrito!");
+            return;
+        }
+        const mensaje = encodeURIComponent("Hola, quiero comprar estos productos:\n\n" + carrito.join("\n"));
+        window.open(`https://wa.me/12345676?text=${mensaje}`, '_blank');
+    }
+</script>
+</body>
+
+</html>

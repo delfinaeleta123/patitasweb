@@ -8,80 +8,79 @@
 
 <body>
     <header>
+         <div class="redes">
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="imagenes/icono whatsapp.webp" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/cataeleta" target="_blank">
+            <img src="imagenes/icono instagram.webp" alt="Instagram">
+        </a>
+    </div>
         <h1 aling="center"> 🐾PATITAS PEQUEÑAS🐾</h1>
         <div class="mensaje">
             <h4>Encuentra tu mascota ideal</h4>
         </div>
-        <div class="nubes-container">
-            <div class="nube">
-                <input type="checkbox" id="animales-toggle" class="toggle">
-                <label for="animales-toggle" class="titulo">ANIMALES</label>
-                <div class="opciones">
-                    <nav>
-                        <ul>
-                            <li><a href="perros.html">perros</a></li>
-                            <li><a href="gatos.html"> gatos</a></li>
-                            <li><a href="conejos.html"> conejos</a></li>
-                        </ul>
-                    </nav>
+        <div class="barra-con-nubes">
+            <div class="franja"></div>
+            <div class="nubes-container">
+                <div class="nube">
+                    <input type="checkbox" id="animales-toggle" class="toggle">
+                    <label for="animales-toggle" class="titulo">ANIMALES</label>
+                    <div class="opciones">
+                        <nav>
+                            <ul>
+                                <li><a href="perros.html">perros</a></li>
+                                <li><a href="gatos.html"> gatos</a></li>
+                                <li><a href="conejos.html"> conejos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-            <div class="nube">
-                <input type="checkbox" id="accesorios-toggle" class="toggle">
-                <label for="accesorios-toggle" class="titulo">ACCESORIOS</label>
-                <div class="opciones">
-                    <nav>
-                        <ul>
-                            <li><a href="collares.html"> collar</a></li>
-                            <li><a href="extras.html"> extras</a></li>
-                        </ul>
-                    </nav>
+                <div class="nube">
+                    <input type="checkbox" id="accesorios-toggle" class="toggle">
+                    <label for="accesorios-toggle" class="titulo">ACCESORIOS</label>
+                    <div class="opciones">
+                        <nav>
+                            <ul>
+                                <li><a href="collares.html"> collar</a></li>
+                                <li><a href="extras.html"> extras</a></li>
+                            </ul>
+                        </nav>
 
 
+                    </div>
+                </div>
+                <div class="nube">
+                    <input type="checkbox" id="juguetes-toggle" class="toggle">
+                    <label for="juguetes-toggle" class="titulo">JUGUETES</label>
+                    <div class="opciones">
+                        <nav>
+                            <ul>
+                                <li><a href="pelotas.html"> pelotas</a></li>
+                                <li><a href="muñecos.html"> muñecos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div class="nube">
-                <input type="checkbox" id="juguetes-toggle" class="toggle">
-                <label for="juguetes-toggle" class="titulo">JUGUETES</label>
-                <div class="opciones">
-                    <nav>
-                        <ul>
-                            <li><a href="pelotas.html"> pelotas</a></li>
-                            <li><a href="muñecos.html"> muñecos</a></li>
-                        </ul>
-                    </nav>
+            <div class="contenedor-imagenes">
+                <div class="imagen">
+                    <img src="imagenes/perrito pag.webp" alt="Perro">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/collar pag.png" alt="collar">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/juguete pag.webp" alt="juguete">
                 </div>
             </div>
-        </div>
-        <div class="contenedor-imagenes">
-            <div class="imagen">
-                <img src="imagenes/perrito pag.webp" alt="Perro">
-            </div>
-            <div class="imagen">
-                <img src="imagenes/collar pag.png" alt="collar">
-            </div>
-            <div class="imagen">
-                <img src="imagenes/juguete pag.webp" alt="juguete">
-            </div>
-        </div>
-        <div class="redes">
-            <a href="https://wa.me/1234567890" target="_blank">
-                <img src="imagenes/icono whatsapp.webp" alt="WhatsApp">
-            </a>
-            <a href="https://www.instagram.com/cataeleta" target="_blank">
-                <img src="imagenes/icono instagram.webp" alt="Instagram">
-            </a>
-        </div>
-        <fieldset>
-            <p>
-                <legend>Persona:</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" size="30" id="nombre"><br>
-            </p>
-            <p></p>
-            <label for="email">Email</label>
-            <input type="text" size="30" id="email">
-            </p>
-        </fieldset>
+            <fieldset class="formulario">
+                <legend>Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" size="30"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" size="30"><br><br>
+                <button type="submit">Enviar</button>
+            </fieldset>
     </header>
 </body>

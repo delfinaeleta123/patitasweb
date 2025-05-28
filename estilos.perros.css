@@ -1,5 +1,5 @@
 .barra {
-  background-color: #ec91a0;
+  background-color:#a761f7;
   padding: 15px 20px;
   position: relative;
   display: flex;
@@ -8,8 +8,7 @@
 }
 
 .titulo {
-  background-color: #ec5ca780;
-  /* Rosa fuerte */
+  background-color:#c4a2e4;
   display: inline-block;
   padding: 5px 20px;
   margin: 0 auto;
@@ -24,14 +23,9 @@
 }
 
 body {
-  background: repeating-linear-gradient(45deg,
-      #f1a6c6,
-      #eea5c3 20px,
-      #f09b9b 20px,
-      #d4bcbc 40px);
-  margin: 0;
-  padding: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+ margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background-image: url(imagenes/definitivo.jpg)
 }
 
 .contenedorperros {
@@ -44,7 +38,7 @@ body {
 }
 
 .tarjetaperro {
-  background-color: #da4690;
+  background-color: #a834ec;
   border-radius: 25px;
   padding: 15px;
   text-align: center;
@@ -67,16 +61,6 @@ body {
   color: #000;
 }
 
-.recuadropadres {
-  background-color: #fcb8da;
-  padding: 10px;
-  margin: 20px auto;
-  width: fit-content;
-  border-radius: 20px;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Comic Sans MS', cursive;
-}
 
 .barrasuperior {
   position: absolute;
@@ -90,7 +74,7 @@ body {
 
 
 .contactos {
-  background-color: #ec407a;
+  background-color: #daa7f7;
   padding: 5px 12px;
   border-radius: 20px;
   font-family: 'Comic Sans MS', cursive;
@@ -127,7 +111,7 @@ body {
   cursor: pointer;
 }
 .recuadroinfo {
-  background-color: #ec407a;
+  background-color: #972fec;
   color: white;
   padding: 15px 20px;
   margin: 30px auto;
@@ -139,7 +123,7 @@ body {
 }
 
 .padres-recuadro {
-  background-color: #f583ab;
+  background-color: #c774ffe1;
   border-radius: 20px;
   padding: 20px;
   margin: 40px auto;
@@ -149,7 +133,7 @@ body {
 }
 
 .padres-recuadro h2 {
-  color: #880e4f;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -202,10 +186,10 @@ body {
 }
 .menu-casita {
  position: absolute;
-  top: 0;
-  left: 0;
-}
-
+  top: 15px;
+  left: 20px;
+  z-index: 999;
+ }
 .menu-casita input {
   display: none;
 }
@@ -216,7 +200,7 @@ body {
   position: absolute;
   top: 35px;
   left: 0;
-  background-color: #f5b1c2;
+  background-color: #cd98f8;
   border-radius: 8px;
   padding: 5px;
   z-index: 10;
@@ -243,7 +227,7 @@ body {
 
 .opciones-casita a:hover,
 .opciones-casita summary:hover {
-  background-color: #fdd0da;
+  background-color:#fffcc0;
   border-radius: 5px;
 }
 .opciones-casita details {

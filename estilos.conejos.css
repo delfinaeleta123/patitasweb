@@ -1,5 +1,5 @@
 .barra {
-  background-color: #fffc4b;
+  background-color: #a761f7;
   padding: 15px 20px;
   position: relative;
   display: flex;
@@ -8,13 +8,13 @@
 }
 
 .titulo {
-  background-color: #ffae62;
-  /* Rosa fuerte */
+  background-color: #c299e9;
   display: inline-block;
   padding: 5px 20px;
   margin: 0 auto;
   border-radius: 5px;
 }
+
 .titulo h1 {
   margin: 0;
   font-size: 30px;
@@ -24,14 +24,9 @@
 }
 
 body {
-  background: repeating-linear-gradient(45deg,
-      #e2bd41,
-      #ffea31 20px,
-      #ffa41c 20px,
-      #ff961e 40px);
   margin: 0;
-  padding: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS', cursive;
+  background-image: url(imagenes/definitivo.jpg)
 }
 
 .contenedorconejos {
@@ -40,11 +35,11 @@ body {
   gap: 100px;
   flex-wrap: nowrap;
   margin: 20px auto;
-  max-width:90%;
+  max-width: 90%;
 }
 
 .tarjetaconejo {
-  background-color: #fdea39;
+  background-color: #a834ec;
   border-radius: 25px;
   padding: 15px;
   text-align: center;
@@ -68,7 +63,7 @@ body {
 }
 
 .recuadropadres {
-  background-color: #f8cf48;
+  background-color: #8a1eee;
   padding: 10px;
   margin: 20px auto;
   width: fit-content;
@@ -90,7 +85,7 @@ body {
 
 
 .contactos {
-  background-color: #e5f783;
+  background-color: #daa7f7;
   padding: 5px 12px;
   border-radius: 20px;
   font-family: 'Comic Sans MS', cursive;
@@ -120,14 +115,16 @@ body {
   height: 30px;
   cursor: pointer;
 }
+
 .icono-menu-superior img {
   width: 40px;
   height: 40px;
   transition: transform 0.2s ease;
   cursor: pointer;
 }
+
 .recuadroinfo {
-  background-color: #f5f83f;
+  background-color: #972fec;
   color: rgb(0, 0, 0);
   padding: 15px 20px;
   margin: 30px auto;
@@ -139,7 +136,7 @@ body {
 }
 
 .padres-recuadro {
-  background-color: #fff174e1;
+  background-color: #c774ffe1;
   border-radius: 20px;
   padding: 20px;
   margin: 40px auto;
@@ -162,13 +159,14 @@ body {
 .padres-conejos {
   display: flex;
   justify-content: center;
-  background-color: #fde936;
+  background-color: #a12fec;
   border-radius: 40px;
   padding: 30px;
   gap: 30px;
   margin: 10px auto 40px;
   width: fit-content;
 }
+
 .padres-conejos img {
   width: 90px;
   height: 90px;
@@ -176,6 +174,7 @@ body {
   border-radius: 30%;
   border: 2px solid white;
 }
+
 .menu-casita {
   position: absolute;
   top: 15px;
@@ -193,14 +192,14 @@ body {
   position: absolute;
   top: 40px;
   left: 0;
-  background-color: #fff86e;
+  background-color: #cd98f8;
   border-radius: 10px;
   padding: 8px;
   z-index: 10;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#toggle-casita:checked + label + .opciones-casita {
+#toggle-casita:checked+label+.opciones-casita {
   display: flex;
 }
 
