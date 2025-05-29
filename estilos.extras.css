@@ -1,10 +1,9 @@
 body {
   margin: 0;
   font-family: 'Comic Sans MS', cursive;
-  background-image: url(imagenes/rojo.jpeg)
+  background-image: url(imagenes/fondo\ rayado\ rojo2.jpg)
 }
 
-/* Encabezado */
 .barra {
   background-color: #fc012b;
   padding: 15px 20px;
@@ -16,7 +15,6 @@ body {
 
 .titulo {
   background-color: #ff678880;
-  /* Rosa fuerte */
   display: inline-block;
   padding: 5px 20px;
   margin: 0 auto;
@@ -135,10 +133,9 @@ main {
   margin-top: 20px;
 }
 
-/* Galería de productos */
 .productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 25px;
   padding: 25px;
   justify-items: center;
@@ -146,8 +143,8 @@ main {
 
 .producto {
   background-color: #b71c1c;
-  padding: 20px; /* reducido para más espacio para la imagen */
-  width: 250px; /* aumentá esto si querés más espacio */
+  padding: 20px;
+  width: 250px;
   text-align: center;
   color: white;
   border: 5px solid white;
@@ -158,7 +155,7 @@ main {
 }
 
 .producto img {
-  width: 100%; /* que no sobresalga */
+  width: 100%; 
   height: auto;
   border-radius: 8px;
   display: block;

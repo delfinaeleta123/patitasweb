@@ -1,10 +1,9 @@
 body {
   margin: 0;
   font-family: 'Comic Sans MS', cursive;
-  background-image: url(imagenes/rojo.jpeg)
+  background-image: url(imagenes/fondo\ rayado\ rojo2.jpg)
 }
 
-/* Encabezado */
 .barra {
   background-color: #fc012b;
   padding: 15px 20px;
@@ -16,7 +15,6 @@ body {
 
 .titulo {
   background-color: #ff678880;
-  /* Rosa fuerte */
   display: inline-block;
   padding: 5px 20px;
   margin: 0 auto;
@@ -163,7 +161,6 @@ main {
 
 .producto img {
   width: 100%;
-  /* que no sobresalga */
   height: auto;
   border-radius: 8px;
   display: block;

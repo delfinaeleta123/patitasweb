@@ -13,7 +13,7 @@ body {
 }
 
 .titulo {
-  background-color: #96ff8c;
+  background-color: #4db644;
   display: inline-block;
   padding: 5px 20px;
   margin: 0 auto;
@@ -132,10 +132,9 @@ main {
   margin-top: 20px;
 }
 
-/* Galería de productos */
 .productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 25px;
   padding: 25px;
   justify-items: center;
@@ -143,8 +142,8 @@ main {
 
 .producto {
   background-color: #44853c;
-  padding: 20px; /* reducido para más espacio para la imagen */
-  width: 250px; /* aumentá esto si querés más espacio */
+  padding: 20px; 
+  width: 250px; 
   text-align: center;
   color: white;
   border: 5px solid white;
@@ -155,7 +154,7 @@ main {
 }
 
 .producto img {
-  width: 100%; /* que no sobresalga */
+  width: 100%; 
   height: auto;
   border-radius: 8px;
   display: block;
